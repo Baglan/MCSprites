@@ -11,7 +11,6 @@
 
 @interface MCSprites () {
     __strong NSArray * _sprites;
-    __strong NSDictionary * _dictionary;
     __strong NSArray * _keys;
 }
 
@@ -19,7 +18,7 @@
 
 @implementation MCSprites
 
-- (id)initWithImageName:(NSString *)imageGame JSONName:(NSString *)jsonName
+- (id)initWithImageName:(NSString *)imageName JSONName:(NSString *)jsonName
 {
     self = [super init];
     if (self) {
@@ -31,14 +30,20 @@
         
         _keys = dictionary[@"sprites"];
         
-        _sprites = [UIImage spritesWithSpriteSheetImage:[UIImage imageNamed:imageGame] spriteSize:];
+        UIImage * spritesImage = [UIImage imageNamed:imageName];
+        _sprites = [spritesImage spritesWithSpriteSheetImage:spritesImage inRange:NSMakeRange(0, _keys.count) spriteSize:size];
     }
     return self;
 }
 
 - (UIImage *)imageForKey:(id)key
 {
-    
+    @try {
+        return _sprites[[_keys indexOfObject:key]];
+    }
+    @catch (NSException *exception) {
+        return nil;
+    }
 }
 
 @end

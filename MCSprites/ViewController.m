@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MCSprites.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    MCSprites * sprites = [[MCSprites alloc] initWithImageName:@"sample-sprite.png" JSONName:@"sample-sprite.json"];
+    
+    UIImageView * b = [[UIImageView alloc] initWithImage:[sprites imageForKey:@"b"]];
+    
+    [self.view addSubview:b];
 }
 
 - (void)didReceiveMemoryWarning

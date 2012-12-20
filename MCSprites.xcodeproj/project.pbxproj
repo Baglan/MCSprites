@@ -18,10 +18,11 @@
 		869723A81682F52B00F4E0F9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 869723A71682F52B00F4E0F9 /* Default-568h@2x.png */; };
 		869723AB1682F52B00F4E0F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 869723AA1682F52B00F4E0F9 /* ViewController.m */; };
 		869723AE1682F52B00F4E0F9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 869723AC1682F52B00F4E0F9 /* ViewController.xib */; };
-		869723B71682F83700F4E0F9 /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 869723B61682F83700F4E0F9 /* UIImage+Sprite.m */; };
 		869723BB1682F85E00F4E0F9 /* MCSprites.m in Sources */ = {isa = PBXBuildFile; fileRef = 869723BA1682F85E00F4E0F9 /* MCSprites.m */; };
-		869723BE168302C800F4E0F9 /* sample-sprite3x100x100.png in Resources */ = {isa = PBXBuildFile; fileRef = 869723BD168302C800F4E0F9 /* sample-sprite3x100x100.png */; };
+		869723BE168302C800F4E0F9 /* sample-sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 869723BD168302C800F4E0F9 /* sample-sprite.png */; };
 		869723C0168302E500F4E0F9 /* sample-sprite.json in Resources */ = {isa = PBXBuildFile; fileRef = 869723BF168302E500F4E0F9 /* sample-sprite.json */; };
+		869723D416830FE700F4E0F9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 869723D316830FE700F4E0F9 /* README.md */; };
+		869723E0168313DE00F4E0F9 /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 869723DF168313DE00F4E0F9 /* UIImage+Sprite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,12 +42,13 @@
 		869723A91682F52B00F4E0F9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		869723AA1682F52B00F4E0F9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		869723AD1682F52B00F4E0F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		869723B51682F83700F4E0F9 /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Sprite.h"; path = "UIImage-Sprite-Additions/UIImage+Sprite.h"; sourceTree = "<group>"; };
-		869723B61682F83700F4E0F9 /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Sprite.m"; path = "UIImage-Sprite-Additions/UIImage+Sprite.m"; sourceTree = "<group>"; };
 		869723B91682F85E00F4E0F9 /* MCSprites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCSprites.h; path = Classes/MCSprites.h; sourceTree = "<group>"; };
 		869723BA1682F85E00F4E0F9 /* MCSprites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCSprites.m; path = Classes/MCSprites.m; sourceTree = "<group>"; };
-		869723BD168302C800F4E0F9 /* sample-sprite3x100x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-sprite3x100x100.png"; sourceTree = "<group>"; };
+		869723BD168302C800F4E0F9 /* sample-sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-sprite.png"; sourceTree = "<group>"; };
 		869723BF168302E500F4E0F9 /* sample-sprite.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sample-sprite.json"; sourceTree = "<group>"; };
+		869723D316830FE700F4E0F9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		869723DE168313DE00F4E0F9 /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Sprite.h"; path = "UIImage-Sprite-Additions/Classes/UIImage+Sprite.h"; sourceTree = "<group>"; };
+		869723DF168313DE00F4E0F9 /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Sprite.m"; path = "UIImage-Sprite-Additions/Classes/UIImage+Sprite.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		869723821682F52B00F4E0F9 = {
 			isa = PBXGroup;
 			children = (
+				869723D316830FE700F4E0F9 /* README.md */,
 				869723B81682F84000F4E0F9 /* Classes */,
 				869723B41682F80D00F4E0F9 /* Helpers */,
 				869723971682F52B00F4E0F9 /* MCSprites */,
@@ -123,8 +126,8 @@
 		869723B41682F80D00F4E0F9 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				869723B51682F83700F4E0F9 /* UIImage+Sprite.h */,
-				869723B61682F83700F4E0F9 /* UIImage+Sprite.m */,
+				869723DE168313DE00F4E0F9 /* UIImage+Sprite.h */,
+				869723DF168313DE00F4E0F9 /* UIImage+Sprite.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -141,7 +144,7 @@
 		869723BC168302BE00F4E0F9 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				869723BD168302C800F4E0F9 /* sample-sprite3x100x100.png */,
+				869723BD168302C800F4E0F9 /* sample-sprite.png */,
 				869723BF168302E500F4E0F9 /* sample-sprite.json */,
 			);
 			name = Assets;
@@ -203,8 +206,9 @@
 				869723A61682F52B00F4E0F9 /* Default@2x.png in Resources */,
 				869723A81682F52B00F4E0F9 /* Default-568h@2x.png in Resources */,
 				869723AE1682F52B00F4E0F9 /* ViewController.xib in Resources */,
-				869723BE168302C800F4E0F9 /* sample-sprite3x100x100.png in Resources */,
+				869723BE168302C800F4E0F9 /* sample-sprite.png in Resources */,
 				869723C0168302E500F4E0F9 /* sample-sprite.json in Resources */,
+				869723D416830FE700F4E0F9 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +222,8 @@
 				8697239E1682F52B00F4E0F9 /* main.m in Sources */,
 				869723A21682F52B00F4E0F9 /* AppDelegate.m in Sources */,
 				869723AB1682F52B00F4E0F9 /* ViewController.m in Sources */,
-				869723B71682F83700F4E0F9 /* UIImage+Sprite.m in Sources */,
 				869723BB1682F85E00F4E0F9 /* MCSprites.m in Sources */,
+				869723E0168313DE00F4E0F9 /* UIImage+Sprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +339,7 @@
 				869723B31682F52B00F4E0F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
