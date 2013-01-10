@@ -35,6 +35,18 @@ Extract and use the sprite you need:
 
     UIImageView * b = [[UIImageView alloc] initWithImage:[sprites imageForKey:@"b"]];
 
+In case the same sprites will be reused in different places, MCSharedSprites singleton can be used:
+
+    #import "MCSharedSprites.h"
+    
+    ...
+
+    [[MCSharedSprites sharedInstance] setSpritesForKey:@"mySprites" imageName:@"sample-sprite.png" JSONName:@"sample-sprite.json"];
+    
+    ...
+    
+    UIImageView * a = [[UIImageView alloc] initWithImage:[[MCSharedSprites sharedInstance] imageInSprites:@"mySprites" forKey:@"a"]];
+
 ## License
 
 Code and other assets in this project are available under the MIT license.

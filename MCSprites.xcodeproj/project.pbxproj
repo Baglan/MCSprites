@@ -23,6 +23,7 @@
 		869723C0168302E500F4E0F9 /* sample-sprite.json in Resources */ = {isa = PBXBuildFile; fileRef = 869723BF168302E500F4E0F9 /* sample-sprite.json */; };
 		869723D416830FE700F4E0F9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 869723D316830FE700F4E0F9 /* README.md */; };
 		869723E0168313DE00F4E0F9 /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 869723DF168313DE00F4E0F9 /* UIImage+Sprite.m */; };
+		86DE3ADF169EACC000D8A281 /* MCSharedSprites.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DE3ADE169EACC000D8A281 /* MCSharedSprites.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		869723D316830FE700F4E0F9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		869723DE168313DE00F4E0F9 /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Sprite.h"; path = "UIImage-Sprite-Additions/Classes/UIImage+Sprite.h"; sourceTree = "<group>"; };
 		869723DF168313DE00F4E0F9 /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Sprite.m"; path = "UIImage-Sprite-Additions/Classes/UIImage+Sprite.m"; sourceTree = "<group>"; };
+		86DE3ADD169EACC000D8A281 /* MCSharedSprites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCSharedSprites.h; path = Classes/MCSharedSprites.h; sourceTree = "<group>"; };
+		86DE3ADE169EACC000D8A281 /* MCSharedSprites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCSharedSprites.m; path = Classes/MCSharedSprites.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 			children = (
 				869723B91682F85E00F4E0F9 /* MCSprites.h */,
 				869723BA1682F85E00F4E0F9 /* MCSprites.m */,
+				86DE3ADD169EACC000D8A281 /* MCSharedSprites.h */,
+				86DE3ADE169EACC000D8A281 /* MCSharedSprites.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 				869723AB1682F52B00F4E0F9 /* ViewController.m in Sources */,
 				869723BB1682F85E00F4E0F9 /* MCSprites.m in Sources */,
 				869723E0168313DE00F4E0F9 /* UIImage+Sprite.m in Sources */,
+				86DE3ADF169EACC000D8A281 /* MCSharedSprites.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
