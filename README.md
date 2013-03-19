@@ -2,8 +2,7 @@
 
 ## Installation
 
-1. Copy files from "Classes" folder to your project;
-2. Copy files from "UIImage+Sprite" submodule, located in the "UIImage-Sprite-Additions/Classes" folder to your project.
+Copy files from "Classes" folder to your project;
 
 ## Sprite image and data files
 

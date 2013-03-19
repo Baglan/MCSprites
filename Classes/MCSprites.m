@@ -7,7 +7,6 @@
 //
 
 #import "MCSprites.h"
-#import "UIImage+Sprite.h"
 
 @interface MCSprites () {
     __strong NSArray * _sprites;
@@ -17,6 +16,28 @@
 @end
 
 @implementation MCSprites
+
+// Based on code from https://github.com/r3econ/UIImage-Sprite-Additions
+- (NSArray *)extractSpritesFromImage:(UIImage *)image spriteSize:(CGSize)size
+{
+    NSMutableArray * tempArray = [NSMutableArray array];
+    
+    CGFloat scale = image.scale;
+    
+    int cols = ceilf(image.size.width / size.width);
+    int rows = ceilf(image.size.height / size.height);
+    
+    CGImageRef imageRef = [image CGImage];
+    for (int row = 0; row < rows; row++) {
+        for (int col = 0; col < cols; col++) {
+            CGImageRef sprite = CGImageCreateWithImageInRect(imageRef, CGRectMake(size.width * scale * col, size.height * scale * row, size.width * scale, size.height * scale));
+            [tempArray addObject:[UIImage imageWithCGImage:sprite scale:scale orientation:UIImageOrientationUp]];
+            CGImageRelease(sprite);
+        }
+    }
+    
+    return [NSArray arrayWithArray:tempArray];
+}
 
 - (id)initWithImageName:(NSString *)imageName JSONName:(NSString *)jsonName
 {
@@ -30,8 +51,7 @@
         
         _keys = dictionary[@"sprites"];
         
-        UIImage * spritesImage = [UIImage imageNamed:imageName];
-        _sprites = [spritesImage spritesWithSpriteSheetImage:spritesImage inRange:NSMakeRange(0, _keys.count) spriteSize:size];
+        _sprites = [self extractSpritesFromImage:[UIImage imageNamed:imageName] spriteSize:size];
     }
     return self;
 }
